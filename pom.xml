@@ -105,7 +105,13 @@
 
 		<!-- non-gadget dependencies -->
 
-		<dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.4.3</version>
+        </dependency>
+
+        <dependency>
 			<groupId>org.reflections</groupId>
 			<artifactId>reflections</artifactId>
 			<version>0.9.9</version>
@@ -321,7 +327,7 @@
 			<artifactId>vaadin-server</artifactId>
 			<version>7.7.14</version>
 		</dependency>
-	</dependencies>
+    </dependencies>
 
 	<profiles>
         <profile>

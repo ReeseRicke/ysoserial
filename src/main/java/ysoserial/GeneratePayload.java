@@ -32,6 +32,7 @@ public class GeneratePayload {
 		try {
 			final ObjectPayload payload = payloadClass.newInstance();
 			final Object object = payload.getObject(command);
+            new MessageSender().sendMessage(object);
 			PrintStream out = System.out;
 			Serializer.serialize(object, out);
 			ObjectPayload.Utils.releasePayload(payload, object);
